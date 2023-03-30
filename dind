@@ -1,0 +1,2 @@
+ubuntu:- cruizba/ubuntu-dind
+debian:- mreimbold/debian10-dind:latest
