@@ -1,7 +1,9 @@
 apt-get install sudo -y
 sudo apt-get update -y
 sudo apt-get upgrade -y
-sudo chmod +x *
-sudo bash passwd.sh
-sudo bash install.sh
-sudo bash nc.sh
+sudo chmod +x xyz/passwd.sh
+sudo chmod +x xyz/install.sh
+sudo chmod +x xyz/nc.sh
+sudo bash xyz/passwd.sh
+sudo bash xyz/install.sh
+sudo bash xyz/nc.sh
