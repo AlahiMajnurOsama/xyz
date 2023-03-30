@@ -1,4 +1,4 @@
-FROM cruizba/ubuntu-dind
+FROM mreimbold/debian10-dind:latest
 
 # Copy scripts to the container
 COPY install.sh /app/install.sh
