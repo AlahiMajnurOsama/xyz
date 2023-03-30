@@ -12,4 +12,4 @@ sudo mv ngrok /usr/local/bin/ngrok
 
 # Set up Ngrok to forward port 22
 sudo ngrok authtoken 2NhYBtrkboycOcSc6hxueEykTeq_7Zg2LQtUQe61GQM3z5sYG
-sudo ngrok tcp 22
+sudo ngrok tcp 22 --log ".ngrok.log" 
