@@ -10,6 +10,6 @@ sudo systemctl restart sshd
 sudo systemctl start nginx
 
 # Install additional packages
-sudo apt install curl wget python git build-essential
+sudo apt install curl wget python git
 
 # Other essential packages can be added here as needed
