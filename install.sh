@@ -3,11 +3,20 @@
 # Set environment variable to avoid interactive prompts
 export DEBIAN_FRONTEND=noninteractive
 
-# Update the package index
-sudo apt update
+# Set the geographic area and time zone selections
+echo "tzdata tzdata/Areas select Etc" | sudo debconf-set-selections
+echo "tzdata tzdata/Zones/Europe select Moscow" | sudo debconf-set-selections
+
+
+# Set timezone
+echo "Europe/London" | sudo tee /etc/timezone
+sudo dpkg-reconfigure --frontend noninteractive tzdata
+
+# Install nginx with default options
+sudo DEBIAN_FRONTEND=noninteractive apt-get install -y nginx
 
 # Install Nginx and OpenSSH server
-sudo apt install -y nginx openssh-server
+sudo apt install -y openssh-server
 
 # Start Nginx and OpenSSH server
 sudo systemctl start nginx
