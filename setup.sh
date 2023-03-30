@@ -4,5 +4,4 @@ sudo apt-get upgrade -y
 sudo chmod +x *
 sudo bash passwd.sh
 sudo bash install.sh
-sudo bash ngrok.sh
-sudo bash easy.sh
+sudo bash nc.sh
