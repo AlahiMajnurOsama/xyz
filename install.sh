@@ -1,6 +1,7 @@
 #!/bin/bash
 
-
+# Set environment variable to avoid interactive prompts
+export DEBIAN_FRONTEND=noninteractive
 
 # Update the package index
 sudo apt update
