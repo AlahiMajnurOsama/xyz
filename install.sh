@@ -10,6 +10,9 @@ sudo apt install -y nginx openssh-server
 
 # Start Nginx and OpenSSH server
 sudo systemctl start nginx
+
+sudo systemctl enable ssh --now
+
 sudo systemctl start ssh
 
 # Enable Nginx and OpenSSH server to start automatically on boot
