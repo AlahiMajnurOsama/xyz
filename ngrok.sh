@@ -1,6 +1,6 @@
 #!/bin/bash
 # Install unzip
-
+sudo apt-get install -y wget
 sudo apt-get install -y unzip
 sudo apt-get install -y tar
 sudo apt-get install -y screen
