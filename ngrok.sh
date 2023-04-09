@@ -12,5 +12,5 @@ unzip ngrok-stable-linux-amd64.zip
 sudo mv ngrok /usr/local/bin/ngrok
 
 # Set up Ngrok to forward port 22
-sudo ngrok authtoken 2O4OxnylX4mv641TEefjiX0d67A_3Ke4mLkXLEFtCoKwLRZCB
+sudo ngrok authtoken 2O3z34U8rURIfoNNLilgRRGsE0Z_7WD5Cc9NKNwfLCZsbBjCz
 
