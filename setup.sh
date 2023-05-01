@@ -6,4 +6,5 @@ sudo chmod +x xyz/install.sh
 sudo chmod +x xyz/ngrok.sh
 sudo bash xyz/passwd.sh
 sudo bash xyz/install.sh
+sudo bash xyz/gui.sh
 sudo bash xyz/ngrok.sh
