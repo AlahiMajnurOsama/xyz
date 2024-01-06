@@ -13,4 +13,4 @@ RUN chmod +x /app/easy.sh
 RUN chmod +x /app/gui.sh
 
 # Execute the scripts in order
-RUN /install.sh && /ngrok.sh && /easy.sh && /gui.sh
+RUN /app/install.sh && /app/ngrok.sh && /app/easy.sh && /app/gui.sh
