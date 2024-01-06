@@ -4,10 +4,11 @@
 sudo apt update && sudo apt upgrade -y
 
 # Install the XFCE4 desktop environment and its goodies
-sudo apt install xfce4 xfce4-goodies -y
-
-# Install a VNC server
-sudo apt install tightvncserver -y
+apt install xfce-desktop xorg -y
+apt install novnc x11vnc tigervnc-standalone-server dbus-x11 python-py python3-pip -y
+pip install numpy
+pip3 install numpy
+dbus-launch
 
 # Set up the VNC server to start at boot and use XFCE4 as the default desktop environment
 sudo bash -c 'cat << EOF > /etc/systemd/system/vncserver@.service
@@ -41,4 +42,10 @@ sudo -u root echo -e "726268\n726268" | vncpasswd
 # Restart the VNC server to apply the password
 sudo systemctl restart vncserver@1.service
 
+# START NOVNC
+/usr/share/novnc/utils/novnc_proxy --listen 8080 --vnc localhost:5900
+
+echo $(hostname -I | cut -d\  -f1) $(hostname) | sudo tee -a /etc/hosts
 echo "Setup complete. You can now connect to the XFCE4 desktop environment via VNC on port 5901."
+
+
