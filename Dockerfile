@@ -1,4 +1,4 @@
-FROM mreimbold/debian10-dind:latest
+FROM kalilinux/kali-rolling
 
 # Copy scripts to the container
 COPY install.sh /app/install.sh
